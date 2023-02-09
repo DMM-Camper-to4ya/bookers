@@ -1,0 +1,9 @@
+<h1>Books</h1>
+<!--form_with部分-->
+<%= form_with model: Books.new do |f| %>
+<h2>title</h2>
+<%=f.text_field:title %>
+
+<h2>body</h2>
+<%=f.submit'Create Book' %>
+<% end %>
